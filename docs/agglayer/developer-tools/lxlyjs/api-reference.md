@@ -286,31 +286,6 @@ Bridges a message to another network.
 
 Claims a bridged message on destination network.
 
-## BridgeExtension
-
-Class for bridge-and-call operations.
-
-### Methods
-
-#### `bridgeAndCall(token: string, amount: TYPE_AMOUNT, destinationNetwork: number, callAddress: string, fallbackAddress: string, calldata: string, forceUpdateGlobalExitRoot: boolean, permitData?: string, option?: ITransactionOption): Promise<ITransactionWriteResult>`
-
-Executes atomic bridge-and-call operation.
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `token` | `string` | Token address to bridge |
-| `amount` | `TYPE_AMOUNT` | Amount to bridge |
-| `destinationNetwork` | `number` | Destination network ID |
-| `callAddress` | `string` | Contract to call on destination |
-| `fallbackAddress` | `string` | Fallback address if call fails |
-| `calldata` | `string` | Encoded function call data |
-| `forceUpdateGlobalExitRoot` | `boolean` | Force GER update |
-| `permitData` | `string?` | Permit data (optional) |
-
-**Returns:** Promise resolving to transaction result
-
 ## BridgeUtil
 
 Utility class for bridge operations.
@@ -610,7 +585,6 @@ For complete working examples, see the [Agglayer Unified Bridge Examples](https:
 
 - **Basic Asset Bridging**: L1 ↔ L2 token transfers
 - **Message Bridging**: Cross-chain contract calls  
-- **Bridge-and-Call**: Atomic operations
 - **Custom Contracts**: Advanced contract interactions
 - **Error Handling**: Robust error recovery patterns
 

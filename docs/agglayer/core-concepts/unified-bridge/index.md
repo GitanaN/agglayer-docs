@@ -120,17 +120,5 @@ Master the three types of cross-chain operations:
     </a>
   </div>
 
-  <!-- Bridge-and-Call Card -->
-  <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px; padding: 1rem 1rem; margin: 0.25rem 0;">
-    <h3 style="color: #0071F7; margin: 0 0 0.5rem 0; font-size: 18px; font-weight: 600;">
-      Bridge-and-Call
-    </h3>
-    <p style="color: #666; margin-bottom: 0.75rem; line-height: 1.4; font-size: 14px;">
-      Advanced cross-chain functionality combining asset transfers with contract execution.
-    </p>
-    <a href="/agglayer/core-concepts/unified-bridge/bridge-and-call/" style="color: #0071F7; text-decoration: none; font-weight: 500; font-size: 14px;">
-      Learn more →
-    </a>
-  </div>
 
 </div>

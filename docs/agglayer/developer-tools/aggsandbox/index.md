@@ -30,7 +30,6 @@ With AggSandbox, you can test the full spectrum of cross-chain operations:
 
 - **Asset Transfers**: Bridge ERC20 tokens and ETH between L1, L2, and L2↔L2 networks
 - **Cross-Chain Messages**: Execute smart contract calls across different chains
-- **Atomic Operations**: Test complex bridge-and-call operations that combine asset transfers with contract execution
 - **Multi-Chain Workflows**: Build applications that coordinate operations across multiple networks
 
 ## Getting Started
@@ -133,18 +132,6 @@ Master all types of cross-chain operations with comprehensive guides:
     </a>
   </div>
 
-  <!-- Bridge-and-Call Card -->
-  <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px; padding: 1rem 1rem; margin: 0.25rem 0;">
-    <h3 style="color: #0071F7; margin: 0 0 0.5rem 0; font-size: 18px; font-weight: 600;">
-      Bridge-and-Call
-    </h3>
-    <p style="color: #666; margin-bottom: 0.75rem; line-height: 1.4; font-size: 14px;">
-      Advanced atomic operations that combine asset transfers with contract execution in single transactions.
-    </p>
-    <a href="/agglayer/developer-tools/aggsandbox/bridge-and-call/" style="color: #0071F7; text-decoration: none; font-weight: 500; font-size: 14px;">
-      Learn more →
-    </a>
-  </div>
 
 </div>
 

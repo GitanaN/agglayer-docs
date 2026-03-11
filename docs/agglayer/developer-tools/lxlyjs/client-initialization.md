@@ -110,7 +110,7 @@ await client.init({
 | `provider` | Web3Provider | ✅ | Web3 provider instance (HDWalletProvider, JsonRpcProvider, etc.) |
 | `configuration.bridgeAddress` | string | ✅ | Address of the bridge contract on this network |
 | `configuration.wrapperAddress` | string | ❌ | Address of the wrapper contract (for certain operations) |
-| `configuration.bridgeExtensionAddress` | string | ❌ | Address of bridge extension contract (for bridge-and-call) |
+| `configuration.bridgeExtensionAddress` | string | ❌ | Address of bridge extension contract |
 | `configuration.isEIP1559Supported` | boolean | ❌ | Whether the network supports EIP-1559 transactions |
 | `defaultConfig.from` | string | ✅ | Default sender address for transactions |
 
@@ -235,27 +235,6 @@ const providers = {
       gasLimit: 300000,  // Custom gas limit
       maxFeePerGas: '20000000000',  // 20 gwei
       maxPriorityFeePerGas: '2000000000'  // 2 gwei
-    }
-  }
-};
-```
-
-### Bridge Extension Support
-
-For bridge-and-call operations:
-
-```javascript
-const providers = {
-  0: {
-    provider: provider,
-    configuration: {
-      bridgeAddress: '0x528e26b25a34a4A5d0dbDa1d57D318153d2ED582',
-      bridgeExtensionAddress: '0x2311BFA86Ae27FC10E1ad3f805A2F9d22Fc8a6a1',  // Required for bridge-and-call
-      wrapperAddress: '0x0f04f8434bac2e1db8fca8a34d3e177b6c7ccaba',
-      isEIP1559Supported: true
-    },
-    defaultConfig: {
-      from: userAddress
     }
   }
 };

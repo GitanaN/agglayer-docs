@@ -71,7 +71,6 @@ nav:
           - Bridge Operations:
             - Asset Bridging: agglayer/core-concepts/unified-bridge/asset-bridging.md
             - Message Bridging: agglayer/core-concepts/unified-bridge/message-bridging.md
-            - Bridge-and-Call: agglayer/core-concepts/unified-bridge/bridge-and-call.md
         - Pessimistic Proof: 
           - agglayer/core-concepts/pessimistic-proof/index.md
           - Core Concepts:
@@ -135,7 +134,6 @@ nav:
           - Bridge Operations:
             - Asset Bridging: agglayer/developer-tools/aggsandbox/asset-bridging.md
             - Message Bridging: agglayer/developer-tools/aggsandbox/message-bridging.md
-            - Bridge-and-Call: agglayer/developer-tools/aggsandbox/bridge-and-call.md
           - Reference:
             - CLI Commands: agglayer/developer-tools/aggsandbox/cli-commands.md
         - Lxly.js:
@@ -146,7 +144,6 @@ nav:
           - Bridge Operations:
             - Bridge Asset: agglayer/developer-tools/lxlyjs/bridge-asset.md
             - Bridge Message: agglayer/developer-tools/lxlyjs/bridge-message.md
-            - Bridge-and-Call: agglayer/developer-tools/lxlyjs/bridge-and-call.md
           - Reference:
             - API Reference: agglayer/developer-tools/lxlyjs/api-reference.md
         - Bridge Service API:
@@ -274,7 +271,7 @@ plugins:
         'agglayer/aggsandbox/bridge-basics.md': 'agglayer/developer-tools/aggsandbox/bridge-basics.md'
         'agglayer/aggsandbox/asset-bridging.md': 'agglayer/developer-tools/aggsandbox/asset-bridging.md'
         'agglayer/aggsandbox/message-bridging.md': 'agglayer/developer-tools/aggsandbox/message-bridging.md'
-        'agglayer/aggsandbox/bridge-and-call.md': 'agglayer/developer-tools/aggsandbox/bridge-and-call.md'
+
         'agglayer/aggsandbox/cli-commands.md': 'agglayer/developer-tools/aggsandbox/cli-commands.md'
         
         # Introduction pages renamed to index.md for SEO optimization
