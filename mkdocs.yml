@@ -273,6 +273,11 @@ plugins:
         'agglayer/aggsandbox/message-bridging.md': 'agglayer/developer-tools/aggsandbox/message-bridging.md'
 
         'agglayer/aggsandbox/cli-commands.md': 'agglayer/developer-tools/aggsandbox/cli-commands.md'
+
+        # Deprecated Bridge-and-Call pages redirected to closest alternatives
+        'agglayer/aggsandbox/bridge-and-call.md': 'agglayer/developer-tools/aggsandbox/message-bridging.md'
+        'agglayer/core-concepts/unified-bridge/bridge-and-call.md': 'agglayer/core-concepts/unified-bridge/index.md'
+        'agglayer/developer-tools/lxly.js.md': 'agglayer/developer-tools/aggsandbox/message-bridging.md'
         
         # Introduction pages renamed to index.md for SEO optimization
         'agglayer/core-concepts/unified-bridge/introduction.md': 'agglayer/core-concepts/unified-bridge/index.md'
