@@ -358,7 +358,6 @@ interface IProviderConfig {
   configuration?: {
     bridgeAddress?: string;         // Bridge contract address
     wrapperAddress?: string;        // Wrapper contract address
-    bridgeExtensionAddress?: string; // Bridge extension address
     isEIP1559Supported?: boolean;   // EIP-1559 support
   };
   defaultConfig?: {

@@ -110,7 +110,6 @@ await client.init({
 | `provider` | Web3Provider | ✅ | Web3 provider instance (HDWalletProvider, JsonRpcProvider, etc.) |
 | `configuration.bridgeAddress` | string | ✅ | Address of the bridge contract on this network |
 | `configuration.wrapperAddress` | string | ❌ | Address of the wrapper contract (for certain operations) |
-| `configuration.bridgeExtensionAddress` | string | ❌ | Address of bridge extension contract |
 | `configuration.isEIP1559Supported` | boolean | ❌ | Whether the network supports EIP-1559 transactions |
 | `defaultConfig.from` | string | ✅ | Default sender address for transactions |
 
