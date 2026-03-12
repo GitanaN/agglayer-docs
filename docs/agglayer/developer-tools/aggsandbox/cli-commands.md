@@ -232,7 +232,7 @@ aggsandbox bridge claim \
   --tx-hash 0xabc123... \
   --source-network-id 0
 
-# Claim specific deposit (for bridge-and-call)
+# Claim specific deposit
 aggsandbox bridge claim \
   --network-id 1 \
   --tx-hash 0xabc123... \
@@ -249,7 +249,7 @@ aggsandbox bridge claim \
 
 ### `aggsandbox bridge message`
 
-Bridge with contract calls (currently has CLI bug - calls bridge-and-call).
+Bridge with contract calls.
 
 ```bash
 aggsandbox bridge message [OPTIONS]
@@ -284,42 +284,6 @@ aggsandbox bridge message \
   --target 0xContract \
   --data 0xCallData \
   --amount 1000000000000000000
-```
-
-### `aggsandbox bridge bridge-and-call`
-
-Execute atomic asset bridge + contract call.
-
-```bash
-aggsandbox bridge bridge-and-call [OPTIONS]
-```
-
-**Required Options:**
-
-- `--network, -n <ID>` - Source network ID
-- `--destination-network, -d <ID>` - Destination network ID
-- `--token, -t <ADDRESS>` - Token contract address
-- `--amount, -a <AMOUNT>` - Amount to bridge
-- `--target <ADDRESS>` - Target contract address
-- `--data <HEX>` - Contract call data
-- `--fallback <ADDRESS>` - Fallback address if call fails
-
-**Optional Options:**
-
-- `--msg-value <VALUE>` - ETH value for contract call
-- `--private-key <KEY>` - Private key to use
-
-**Examples:**
-```bash
-# Bridge tokens and call contract
-aggsandbox bridge bridge-and-call \
-  --network 0 \
-  --destination-network 1 \
-  --token 0x5FbDB2315678afecb367f032d93F642f64180aa3 \
-  --amount 100 \
-  --target 0xContractAddress \
-  --data 0xCallData \
-  --fallback 0xFallbackAddress
 ```
 
 ## Information Commands

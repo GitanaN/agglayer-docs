@@ -202,7 +202,6 @@ You've successfully completed your first cross-chain bridge operation! You've:
 ### **Explore More Bridge Operations**
 - **[Asset Bridging Guide](asset-bridging.md)** - Complete asset bridge operations
 - **[Message Bridging](message-bridging.md)** - Cross-chain contract calls
-- **[Bridge-and-Call](bridge-and-call.md)** - Advanced atomic operations
 
 ### **Advanced Usage**
 - **[CLI Reference](cli-commands.md)** - Complete command documentation
@@ -246,7 +245,6 @@ aggsandbox bridge asset \
 # Run automated bridge tests
 python3 test/L1-L2/test_bridge_asset_and_claim.py 25
 python3 test/L2-L1/test_bridge_asset_and_claim.py 15
-python3 test/L1-L2/test_bridge_and_call_and_claim.py 5
 ```
 
 ## Troubleshooting Quick Fixes

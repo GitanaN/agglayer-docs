@@ -78,40 +78,6 @@ aggsandbox bridge message \
 - Cross-chain notifications
 - State synchronization
 
-### **Bridge-and-Call**
-
-Atomic combination of asset transfer and contract execution.
-
-**How it Works:**
-
-1. **Bridge**: Assets are bridged on source network
-2. **Exit Root Update**:
-    - **If L1 source**: Direct Global Exit Root update on L1
-    - **If L2 source**: Local Exit Root update, then AggKit updates GER on L1
-3. **Sync**: GER is synchronized to the destination network via AggKit
-4. **Claim Assets**: Asset bridge is claimed first
-5. **Call Contract**: Contract is called with the bridged assets
-6. **Execute**: Both operations succeed or both fail atomically
-7. **Verify**: Both asset transfer and contract execution verified
-
-**Example:**
-```bash
-# Bridge tokens and call a contract atomically
-aggsandbox bridge bridge-and-call \
-  --network 0 \
-  --destination-network 1 \
-  --token 0xTokenAddress \
-  --amount 50 \
-  --target 0xContractAddress \
-  --data 0xCallData \
-  --fallback 0xFallbackAddress
-```
-
-**Two-Phase Claiming:**
-
-- **Phase 1**: First claim the asset bridge (deposit_count = 0) to transfer the tokens to the destination network and make them available for the contract execution phase
-- **Phase 2**: Then claim the message bridge (deposit_count = 1) to execute the contract function using the newly transferred tokens, completing the atomic operation
-
 ## Network Combinations
 
 ### **Supported Bridge Paths**
@@ -274,24 +240,6 @@ aggsandbox bridge claim --network 1 --tx-hash 0xBridgeTx --source-network 0
 aggsandbox show claims --network-id 1
 ```
 
-### 🔗 **Bridge-and-Call Pattern**
-```bash
-# 1. Prepare call data
-CALL_DATA=$(cast calldata "transfer(address,uint256)" 0xRecipient 100)
-
-# 2. Execute bridge-and-call
-aggsandbox bridge bridge-and-call \
-  --network 0 --destination-network 1 \
-  --token 0xToken --amount 100 \
-  --target 0xContract --data $CALL_DATA \
-  --fallback 0xFallback
-
-# 3. Claim asset bridge (deposit_count = 0)
-aggsandbox bridge claim --network 1 --tx-hash 0xTx --source-network 0 --deposit-count 0
-
-# 4. Claim message bridge (deposit_count = 1)  
-aggsandbox bridge claim --network 1 --tx-hash 0xTx --source-network 0 --deposit-count 1
-```
 
 ## Error Handling
 

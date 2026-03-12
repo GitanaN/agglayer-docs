@@ -158,15 +158,6 @@ graph TD
 2. Execute message on target contract
 3. Handle ETH/WETH value transfer
 
-### Bridge-and-Call Architecture
-
-**Enhanced Flow:**
-
-1. Combines asset and message bridging
-2. Uses BridgeExtension contracts
-3. Deploys temporary JumpPoint contracts
-4. Enables calls to any destination contract
-
 ## State Synchronization
 
 ### Global Exit Root Updates

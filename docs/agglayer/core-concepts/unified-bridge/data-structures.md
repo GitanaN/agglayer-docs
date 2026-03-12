@@ -157,13 +157,4 @@ This structure enables efficient lookup of any transaction across the entire net
 
 ![Bridge Message L2 to L1](../../../img/agglayer/BridgeMessageProcess.png)
 
-### Flow for L2 -> L2 Bridge and Call
-
-1. User/Developer/Dapp initiate `bridgeAndCall` call on L2 Source.
-2. Similar to L2 -> L1 process, global exit root on L1 is updated, which includes the source chain bridging transaction.
-3. Then destination L2 sequencer fetches and updates the latest global exit root from the global exit root manager.
-4. Bridge contract on destination L2 chain validates the smtProof against the global exit root on its chain. If passes next step.
-5. Process the `claimAsset`, `claimMessage` on destination L2 chain.
-
-![Bridge and Call L2 to L2](../../../img/agglayer/BridgeAndCallProcess.png)
 
